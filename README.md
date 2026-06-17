@@ -44,3 +44,26 @@ using features like Open, High, Low, and Volume.
 - Volume had negligible impact on prediction due to scale difference
 - The model's predictions closely tracked actual closing price trends,
   showing strong performance relative to AAPL's price range (~$150-200)
+
+## Task 3: Heart Disease Prediction
+
+### Task Objective
+Build a classification model to predict whether a person is at risk 
+of heart disease based on their health data.
+
+### Dataset Used
+- **Name:** Heart Disease UCI Dataset
+- **Source:** Kaggle / UCI Machine Learning Repository
+- **Size:** 302 patient records (after removing 1 duplicate), 13 features + target
+
+### Models Applied
+- Logistic Regression
+
+### Key Results and Findings
+- Accuracy: 79%
+- AUC Score: 0.86
+- Recall for Disease class: 88% (model catches most actual disease cases)
+- Most influential features: chest pain type (cp), sex, max heart rate 
+  (thalach), and ST depression (oldpeak)
+- Age and fasting blood sugar had minimal influence, contrary to common 
+  assumptions about age being a dominant risk factor
