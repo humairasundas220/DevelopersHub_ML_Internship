@@ -21,3 +21,26 @@ No model applied — this is an EDA (Exploratory Data Analysis) task.
 3. Iris Setosa is clearly separable from Versicolor and Virginica.
 4. A few outliers exist in sepal_width for Setosa (visible in box plots).
 5. Petal features are the most useful for future classification tasks.
+
+## Task 2: Predict Future Stock Prices (Short-Term)
+
+### Task Objective
+Use historical stock data to predict the next day's closing price 
+using features like Open, High, Low, and Volume.
+
+### Dataset Used
+- **Name:** AAPL (Apple Inc.) historical stock data
+- **Source:** Yahoo Finance, fetched via the `yfinance` Python library
+- **Period:** January 2022 – June 2026
+- **Size:** 1117 trading days, 4 features (Open, High, Low, Volume)
+
+### Models Applied
+- Linear Regression
+
+### Key Results and Findings
+- MAE: 3.21 → predictions are off by ~$3.21 on average
+- RMSE: 4.39 → indicates a few larger errors exist
+- High and Low prices were the most influential features
+- Volume had negligible impact on prediction due to scale difference
+- The model's predictions closely tracked actual closing price trends,
+  showing strong performance relative to AAPL's price range (~$150-200)
